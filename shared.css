@@ -326,7 +326,7 @@ a:hover { text-decoration: underline; }
   position: relative;
 }
 
-/* Photo avatar — clips a spritesheet quadrant into a circle */
+/* Photo avatar — individual headshot per circle */
 .avatar.avatar-photo {
   background: #E5E7EB;
   border-color: #fff;
@@ -335,9 +335,12 @@ a:hover { text-decoration: underline; }
 }
 
 .avatar.avatar-photo img {
-  position: absolute;
-  inset: 0;
+  position: static;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
   border-radius: 50%;
+  inset: auto;
 }
 
 .avatar img {
