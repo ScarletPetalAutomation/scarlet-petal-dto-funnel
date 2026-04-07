@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- ── SEO ── -->
+  <title>Your Smart Calls AI Demo Is Booked | Scarlet Petal Automation</title>
+  <meta name="description" content="Your Smart Calls AI Voice Assistant demo call is confirmed. Watch the video below and prepare for your free consultation with Scarlet Petal Automation." />
+  <meta name="robots" content="noindex, nofollow" />
+  <link rel="canonical" href="https://scarletpetalautomation.com/triage-thank-you" />
+
+  <!-- ── Open Graph ── -->
+  <meta property="og:type"        content="website" />
+  <meta property="og:url"         content="https://scarletpetalautomation.com/triage-thank-you" />
+  <meta property="og:title"       content="Smart Calls AI Demo Confirmed | Scarlet Petal Automation" />
+  <meta property="og:description" content="Your Smart Calls AI Voice Assistant demo is booked. Here's what to do next." />
+  <meta property="og:image"       content="https://scarletpetalautomation.com/og-image.png" />
+
+  <!-- ── Meta Pixel ── -->
+  <script>
+    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+    n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+    document,'script','https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', 'YOUR_PIXEL_ID');
+    fbq('track', 'PageView');
+  </script>
+  <noscript>
+    <img height="1" width="1" style="display:none" alt=""
+      src="https://www.facebook.com/tr?id=YOUR_PIXEL_ID&ev=PageView&noscript=1"/>
+  </noscript>
+
+  <link rel="stylesheet" href="shared.css" />
+  <style>
+    body { background: var(--bg-darkest); color: var(--text-white); }
+
+    .confirm-hero {
+      background: var(--bg-darkest);
+      position: relative;
+      overflow: hidden;
+      padding: 5rem 1.5rem 4rem;
+      text-align: center;
+    }
+
+    .confirm-hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(ellipse at 15% 60%, rgba(192,57,43,0.22) 0%, transparent 55%),
+        radial-gradient(ellipse at 85% 25%, rgba(212,175,55,0.12) 0%, transparent 55%);
+      pointer-events: none;
+    }
+
+    .mesh-bg {
+      position: absolute;
+      inset: 0;
+      background-image: radial-gradient(circle, rgba(255,255,255,0.035) 1px, transparent 1px);
+      background-size: 36px 36px;
+      pointer-events: none;
+      animation: meshDrift 25s linear infinite;
+    }
+
+    @keyframes meshDrift {
+      0%   { background-position: 0 0; }
+      100% { background-position: 36px 36px; }
+    }
+
+    .confirm-headline {
+      font-size: clamp(2rem, 5vw, 3rem);
+      color: var(--text-white);
+      position: relative;
+      z-index: 1;
+    }
+
+    .confirm-sub {
+      font-size: 1.1rem;
+      color: rgba(255,255,255,0.72);
+      max-width: 580px;
+      margin: 0.85rem auto 0;
+      position: relative;
+      z-index: 1;
+    }
+
+    .confirmed-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: rgba(39,174,96,0.15);
+      border: 1px solid rgba(39,174,96,0.4);
+      color: #2ECC71;
+      border-radius: var(--radius-pill);
+      padding: 0.45rem 1.1rem;
+      font-size: 0.9rem;
+      font-weight: 700;
+      margin-bottom: 1.25rem;
+      position: relative;
+      z-index: 1;
+    }
+
+    .ai-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: rgba(192,57,43,0.15);
+      border: 1px solid rgba(192,57,43,0.35);
+      color: var(--rose);
+      border-radius: var(--radius-pill);
+      padding: 0.35rem 0.9rem;
+      font-size: 0.82rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+      position: relative;
+      z-index: 1;
+    }
+
+    .video-section { background: var(--bg-dark); padding: 0; }
+    .video-bar {
+      background: var(--gold);
+      color: #1A1A1A;
+      text-align: center;
+      padding: 0.9rem 1.5rem;
+      font-family: var(--font-heading);
+      font-weight: 800;
+      font-size: 1.05rem;
+    }
+
+    .info-section {
+      background: #fff;
+      padding: 4rem 1.5rem;
+      color: var(--text-primary);
+    }
+
+    .step-block {
+      background: #FAFAFA;
+      border: 1px solid #E5E7EB;
+      border-radius: var(--radius-lg);
+      padding: 2rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .step-block h3 {
+      font-size: 1.2rem;
+      color: var(--text-primary);
+      margin-bottom: 0.6rem;
+    }
+
+    .step-block p { font-size: 0.95rem; color: var(--text-secondary); }
+
+    .confirmed-note {
+      background: rgba(39,174,96,0.07);
+      border: 1px solid rgba(39,174,96,0.25);
+      border-radius: var(--radius-md);
+      padding: 0.85rem 1.25rem;
+      font-size: 0.88rem;
+      color: #1A7A3A;
+      margin-top: 0.75rem;
+    }
+
+    .google-note {
+      background: #FFF8E7;
+      border: 1px solid #F0DCA0;
+      border-radius: var(--radius-md);
+      padding: 0.85rem 1.25rem;
+      font-size: 0.85rem;
+      color: #7A5C00;
+      margin-top: 0.75rem;
+    }
+
+    .stories-section {
+      background: var(--bg-darkest);
+      padding: 5rem 1.5rem;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .stories-section::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(ellipse at 90% 80%, rgba(192,57,43,0.15) 0%, transparent 55%),
+        radial-gradient(ellipse at 10% 20%, rgba(212,175,55,0.08) 0%, transparent 55%);
+      pointer-events: none;
+    }
+
+    .faq-section { background: #fff; padding: 4rem 1.5rem; }
+    .faq-divider {
+      width: 50px;
+      height: 4px;
+      background: linear-gradient(90deg, var(--scarlet), var(--gold));
+      border-radius: var(--radius-pill);
+      margin: 0 auto 2rem;
+    }
+
+    /* AI feature highlights */
+    .ai-feature-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1rem;
+      margin: 2rem 0;
+    }
+
+    .ai-feature-card {
+      background: rgba(192,57,43,0.05);
+      border: 1px solid rgba(192,57,43,0.18);
+      border-radius: var(--radius-md);
+      padding: 1.5rem 1rem;
+      text-align: center;
+    }
+
+    .ai-feature-icon {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+      display: block;
+    }
+
+    .ai-feature-title {
+      font-family: var(--font-heading);
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: var(--scarlet);
+      margin-bottom: 0.35rem;
+    }
+
+    .ai-feature-desc {
+      font-size: 0.82rem;
+      color: var(--text-secondary);
+    }
+
+    @media (max-width: 600px) {
+      .ai-feature-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ─────────────────────────────────────────
+     CONFIRMATION HERO
+───────────────────────────────────────── -->
+<section class="confirm-hero fade-in-up">
+  <div class="mesh-bg"></div>
+  <div class="container--narrow" style="position:relative; z-index:1;">
+    <div class="ai-badge">🤖 Smart Calls AI Voice Assistant</div>
+    <br/>
+    <div class="confirmed-badge">✅ Demo Call Confirmed</div>
+    <h1 class="confirm-headline">Your FREE Smart Calls Demo Is Scheduled</h1>
+    <p class="confirm-sub">
+      On this call, we'll show you exactly how our 24/7 AI Voice Assistant can handle your
+      incoming calls, qualify leads, and book appointments — automatically.
+    </p>
+  </div>
+</section>
+
+<!-- ─────────────────────────────────────────
+     VIDEO SECTION
+───────────────────────────────────────── -->
+<section class="video-section fade-in-up delay-1">
+  <div class="video-bar">👇 Watch This Before Your Demo — Takes 3 Minutes</div>
+  <div class="container" style="padding:2.5rem 1.5rem; background:var(--bg-dark);">
+    <div style="max-width:800px; margin:0 auto;">
+      <div style="position:relative; padding-bottom:56.25%; background:#000; border-radius:var(--radius-md); overflow:hidden; border:1px solid rgba(255,255,255,0.08);">
+        <div style="position:absolute; inset:0; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:1rem;">
+          <div style="width:72px; height:72px; background:rgba(192,57,43,0.8); border-radius:50%; display:flex; align-items:center; justify-content:center;">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="#fff"><polygon points="5,3 19,12 5,21"/></svg>
+          </div>
+          <p style="color:rgba(255,255,255,0.5); font-size:0.9rem;">
+            [Your Smart Calls pre-demo video embed goes here]
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─────────────────────────────────────────
+     NEXT STEPS / INFO
+───────────────────────────────────────── -->
+<section class="info-section fade-in-up delay-2">
+  <div class="container--narrow">
+    <h2 style="text-align:center; font-size:1.75rem; margin-bottom:2rem; color:var(--text-primary);">
+      What Happens Next
+    </h2>
+
+    <!-- AI features preview -->
+    <div class="ai-feature-grid">
+      <div class="ai-feature-card">
+        <span class="ai-feature-icon">📞</span>
+        <div class="ai-feature-title">24/7 Call Handling</div>
+        <p class="ai-feature-desc">Never miss a lead again — our AI answers every call, any time</p>
+      </div>
+      <div class="ai-feature-card">
+        <span class="ai-feature-icon">🎯</span>
+        <div class="ai-feature-title">Lead Qualification</div>
+        <p class="ai-feature-desc">AI qualifies callers using your custom criteria before booking</p>
+      </div>
+      <div class="ai-feature-card">
+        <span class="ai-feature-icon">📆</span>
+        <div class="ai-feature-title">Auto-Booking</div>
+        <p class="ai-feature-desc">Confirms appointments directly into your calendar automatically</p>
+      </div>
+    </div>
+
+    <!-- Step 1 -->
+    <div class="step-block mt-3">
+      <span class="step-tag">Step 1</span>
+      <h3>Add Your Demo Call To Your Calendar Below 👇</h3>
+      <div class="confirmed-note">
+        ✅ Your call is confirmed — check your email for the calendar invite.
+      </div>
+      <div class="google-note" style="margin-top:0.75rem;">
+        🖱️ <strong>Note:</strong> You may notice an email from Google titled
+        <em>"Invitation from an unknown sender"</em> — this is due to a recent Google Calendar
+        update. If you see this email, please select <strong>"Yes"</strong> on the calendar
+        appointment to avoid confusion.
+      </div>
+    </div>
+
+    <!-- Step 2 -->
+    <div class="step-block">
+      <span class="step-tag">Step 2</span>
+      <h3>Please Confirm Your Appointment Via Email</h3>
+      <p>
+        Check your inbox for a confirmation email from our team. Reply to confirm you're attending —
+        this allows us to personalise the demo specifically for your business and call volume.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ─────────────────────────────────────────
+     FAQ SECTION
+───────────────────────────────────────── -->
+<section class="faq-section fade-in-up delay-3">
+  <div class="container--narrow">
+    <h2 style="text-align:center; font-size:1.75rem; margin-bottom:0.5rem;">
+      Questions Before Your Demo?
+    </h2>
+    <div class="faq-divider"></div>
+
+    <div id="faq-list">
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          Why are you offering this demo for free?
+        </button>
+        <div class="faq-answer">
+          <p>
+            We offer free demos because once you see Smart Calls AI in action, the results speak
+            for themselves. We'll show you a live demo on a number in your vertical — no risk,
+            no commitment required.
+          </p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          What do I need to prepare for the demo?
+        </button>
+        <div class="faq-answer">
+          <p>
+            Nothing! Just show up. It helps to think about your current call volume and what
+            questions you typically get from callers — so we can tailor the AI script to your
+            business during the demo. That's it.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─────────────────────────────────────────
+     GROWTH STORIES
+───────────────────────────────────────── -->
+<section class="stories-section fade-in-up delay-4">
+  <div class="mesh-bg"></div>
+  <div class="container" style="position:relative;z-index:1;">
+    <h2 style="text-align:center; font-size:1.75rem; color:var(--text-white); margin-bottom:0.5rem;">
+      Our Growth Stories
+    </h2>
+    <p style="text-align:center; color:rgba(255,255,255,0.55); font-size:0.95rem; margin-bottom:2.5rem;">
+      Businesses we've helped grow using Smart Calls AI + Paid Advertising
+    </p>
+
+    <div class="testimonial-grid">
+      <div class="testimonial-card">
+        <div class="testimonial-roas">3× More Bookings</div>
+        <div class="testimonial-name">Local Service Business</div>
+        <div class="testimonial-detail">Tripled appointment bookings within 2 weeks of AI install</div>
+      </div>
+      <div class="testimonial-card">
+        <div class="testimonial-roas">Zero Missed Calls</div>
+        <div class="testimonial-name">Home Services Company</div>
+        <div class="testimonial-detail">From 40% missed call rate to 0% — AI handles every call 24/7</div>
+      </div>
+      <div class="testimonial-card">
+        <div class="testimonial-roas">$0 → $8k/mo</div>
+        <div class="testimonial-name">Solo Tradesperson</div>
+        <div class="testimonial-detail">AI voice + Smart Calls ads generated first $8k month ever</div>
+      </div>
+      <div class="testimonial-card">
+        <div class="testimonial-roas">86% Client Win Rate</div>
+        <div class="testimonial-name">Average Across Clients</div>
+        <div class="testimonial-detail">Of clients who implement Smart Calls see revenue increase in 30 days</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─────────────────────────────────────────
+     FOOTER
+───────────────────────────────────────── -->
+<footer class="main-footer">
+  <ul class="footer-links">
+    <li><a href="terms.html">Terms</a></li>
+    <li><a href="disclaimer.html">Disclaimer</a></li>
+    <li><a href="privacy.html">Privacy</a></li>
+  </ul>
+  <p class="footer-disclaimer">
+    This site is not a part of the Facebook website or Facebook Inc. Additionally, this website
+    is not endorsed by Facebook in any way. FACEBOOK is a trademark of FACEBOOK, Inc.
+  </p>
+  <p style="margin-top:0.75rem; color:var(--text-muted);">
+    © <span id="year"></span> Scarlet Petal Automation — All Rights Reserved.
+  </p>
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  /* ── FAQ accordion ── */
+  document.querySelectorAll('.faq-question').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      var item = this.closest('.faq-item');
+      var isOpen = item.classList.contains('is-open');
+      document.querySelectorAll('.faq-item.is-open').forEach(function(el) {
+        el.classList.remove('is-open');
+        el.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
+      });
+      if (!isOpen) {
+        item.classList.add('is-open');
+        this.setAttribute('aria-expanded', 'true');
+      }
+    });
+  });
+</script>
+
+</body>
+</html>

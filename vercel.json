@@ -1,0 +1,31 @@
+{
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "rewrites": [
+    { "source": "/",               "destination": "/index.html" },
+    { "source": "/closer-schedule","destination": "/closer-schedule.html" },
+    { "source": "/triage-schedule","destination": "/triage-schedule.html" },
+    { "source": "/closer-thank-you","destination": "/closer-thank-you.html" },
+    { "source": "/triage-thank-you","destination": "/triage-thank-you.html" },
+    { "source": "/fam-free-audit", "destination": "/fam-free-audit.html" },
+    { "source": "/fam-schedule",   "destination": "/fam-schedule.html" },
+    { "source": "/bridge",         "destination": "/bridge.html" }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        { "key": "X-Content-Type-Options", "value": "nosniff" },
+        { "key": "X-Frame-Options",        "value": "SAMEORIGIN" },
+        { "key": "X-XSS-Protection",       "value": "1; mode=block" },
+        { "key": "Referrer-Policy",        "value": "strict-origin-when-cross-origin" }
+      ]
+    },
+    {
+      "source": "/shared.css",
+      "headers": [
+        { "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }
+      ]
+    }
+  ]
+}
