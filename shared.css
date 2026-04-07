@@ -315,14 +315,29 @@ a:hover { text-decoration: underline; }
 }
 
 .avatar {
-  width: 40px;
-  height: 40px;
+  width: 48px;
+  height: 48px;
   border-radius: 50%;
   border: 2.5px solid #fff;
   margin-right: -10px;
   background: linear-gradient(135deg, var(--scarlet), var(--gold));
   overflow: hidden;
   flex-shrink: 0;
+  position: relative;
+}
+
+/* Photo avatar — clips a spritesheet quadrant into a circle */
+.avatar.avatar-photo {
+  background: #E5E7EB;
+  border-color: #fff;
+  box-shadow: 0 0 0 2px rgba(0,0,0,0.08);
+  overflow: hidden;
+}
+
+.avatar.avatar-photo img {
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
 }
 
 .avatar img {
