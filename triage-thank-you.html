@@ -17,7 +17,7 @@
   <meta property="og:description" content="Your Smart Calls AI Voice Assistant demo is booked. Here's what to do next." />
   <meta property="og:image"       content="https://scarletpetalautomation.com/og-image.png" />
 
-  <!-- ── Meta Pixel ── -->
+  <!-- ── Meta Pixel — fires 'Lead' event (triage demo booked confirmation) ── -->
   <script>
     !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
     n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
@@ -26,10 +26,11 @@
     document,'script','https://connect.facebook.net/en_US/fbevents.js');
     fbq('init', '4129749820595867');
     fbq('track', 'PageView');
+    fbq('track', 'Lead');
   </script>
   <noscript>
     <img height="1" width="1" style="display:none" alt=""
-      src="https://www.facebook.com/tr?id=4129749820595867&ev=PageView&noscript=1"/>
+      src="https://www.facebook.com/tr?id=4129749820595867&ev=Lead&noscript=1"/>
   </noscript>
 
   <link rel="stylesheet" href="shared.css" />
