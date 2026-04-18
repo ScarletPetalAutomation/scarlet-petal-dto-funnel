@@ -73,40 +73,45 @@
       text-align: center;
     }
 
-    /* ── Pre-header callout (audience qualifier) ── */
+    /* ── Audience callout (small icon-prefixed qualifier) ── */
     .headline-preheader {
-      font-size: clamp(0.95rem, 2vw, 1.1rem);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.4rem;
+      font-size: 0.95rem;
       font-weight: 500;
       color: var(--text-secondary);
-      letter-spacing: 0.01em;
-      margin-bottom: 0.6rem;
+      margin-bottom: 0.5rem;
       line-height: 1.4;
     }
+    .headline-preheader::before {
+      content: '\1F464'; /* person silhouette */
+      font-size: 0.9rem;
+    }
 
-    /* ── Primary offer headline (focal point) ── */
+    /* ── Offer headline — bold, single-line, moderate size ── */
     .headline-main {
-      font-size: clamp(2.4rem, 6vw, 3.75rem);
-      font-weight: 800;
+      font-size: clamp(1.35rem, 3.5vw, 1.75rem);
+      font-weight: 700;
       color: var(--text-primary);
-      line-height: 1.1;
-      letter-spacing: -0.02em;
-      margin-bottom: 1rem;
+      line-height: 1.25;
+      letter-spacing: -0.01em;
+      margin-bottom: 0.35rem;
     }
 
-    .headline-accent {
-      color: var(--scarlet);
-    }
-
+    /* ── Method / proof line — scarlet accent, same weight as H1 ── */
     .sub-headline {
-      font-size: 1.05rem;
-      color: var(--text-secondary);
-      max-width: 600px;
-      margin: 0 auto;
-      line-height: 1.6;
+      font-size: clamp(1.1rem, 2.8vw, 1.4rem);
+      font-weight: 700;
+      color: var(--scarlet);
+      max-width: 680px;
+      margin: 0 auto 0;
+      line-height: 1.35;
     }
-
     .sub-headline strong {
-      color: var(--text-primary);
+      font-weight: 700;
+      color: var(--scarlet);
     }
 
     .survey-wrapper {
@@ -172,12 +177,10 @@
       Tired Of Wasting Ad Spend &amp; Guessing How To Scale?
     </p>
     <h1 class="headline-main">
-      Get A Free Meta Ad Audit +<br/>
-      <span class="headline-accent">Custom Scaling Plan</span>
+      Get A Free Meta Ad Audit + Custom Scaling Plan
     </h1>
     <p class="sub-headline">
-      Powered By Our <strong>Predictable Scaling Quadrant™ Method</strong><br/>
-      Proven Across <strong>$2M+ In Ad Spend</strong>
+      Powered By Our Predictable Scaling Quadrant™ Method (Proven Across $2M+ In Ad Spend)
     </p>
   </div>
 </div>
