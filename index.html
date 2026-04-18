@@ -73,10 +73,24 @@
       text-align: center;
     }
 
+    /* ── Pre-header callout (audience qualifier) ── */
+    .headline-preheader {
+      font-size: clamp(0.95rem, 2vw, 1.1rem);
+      font-weight: 500;
+      color: var(--text-secondary);
+      letter-spacing: 0.01em;
+      margin-bottom: 0.6rem;
+      line-height: 1.4;
+    }
+
+    /* ── Primary offer headline (focal point) ── */
     .headline-main {
-      font-size: clamp(2rem, 5vw, 3rem);
+      font-size: clamp(2.4rem, 6vw, 3.75rem);
+      font-weight: 800;
       color: var(--text-primary);
-      margin-bottom: 0.75rem;
+      line-height: 1.1;
+      letter-spacing: -0.02em;
+      margin-bottom: 1rem;
     }
 
     .headline-accent {
@@ -84,10 +98,11 @@
     }
 
     .sub-headline {
-      font-size: 1.1rem;
+      font-size: 1.05rem;
       color: var(--text-secondary);
-      max-width: 640px;
+      max-width: 600px;
       margin: 0 auto;
+      line-height: 1.6;
     }
 
     .sub-headline strong {
@@ -153,13 +168,13 @@
     </div>
 
     <!-- Headline -->
-    <h1 class="headline-main">
+    <p class="headline-preheader">
       Tired Of Wasting Ad Spend &amp; Guessing How To Scale?
-    </h1>
-    <h2 style="font-size:clamp(1.5rem,4vw,2.25rem); margin: 0.5rem 0 1rem; color: var(--text-primary);">
-      Get A Free Meta Ad Audit +
+    </p>
+    <h1 class="headline-main">
+      Get A Free Meta Ad Audit +<br/>
       <span class="headline-accent">Custom Scaling Plan</span>
-    </h2>
+    </h1>
     <p class="sub-headline">
       Powered By Our <strong>Predictable Scaling Quadrant™ Method</strong><br/>
       Proven Across <strong>$2M+ In Ad Spend</strong>
