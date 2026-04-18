@@ -62,7 +62,7 @@ body {
   font-size: 16px;
   line-height: 1.65;
   color: var(--text-primary);
-  background: var(--bg-bg-light);
+  background: #F5F5F5;  /* unified canvas — same as survey section, no gap below footer */
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
   /* Sticky footer: pushes footer to bottom on short-content screens */
@@ -430,8 +430,8 @@ a:hover { text-decoration: underline; }
 
 /* ─── Footer ─── */
 footer.main-footer {
-  background: var(--bg-darkest);
-  color: var(--text-on-dark);
+  background: transparent;          /* no block colour — sits on page canvas */
+  color: #4A5568;
   padding: 1rem 1.5rem;
   text-align: center;
   font-size: 0.82rem;
@@ -447,18 +447,18 @@ footer.main-footer {
 }
 
 .footer-links a {
-  color: var(--text-muted);
+  color: #6B7280;
   font-size: 0.82rem;
   transition: color 0.2s;
 }
 
 .footer-links a:hover {
-  color: var(--scarlet-light);
+  color: var(--scarlet);
   text-decoration: none;
 }
 
 .footer-disclaimer {
-  color: var(--text-muted);
+  color: #9CA3AF;
   font-size: 0.78rem;
   max-width: 680px;
   margin: 0.75rem auto 0;
