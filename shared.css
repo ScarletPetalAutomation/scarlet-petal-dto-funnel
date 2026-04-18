@@ -65,6 +65,10 @@ body {
   background: var(--bg-bg-light);
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
+  /* Sticky footer: pushes footer to bottom on short-content screens */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 h1, h2, h3, h4, h5, h6 {
