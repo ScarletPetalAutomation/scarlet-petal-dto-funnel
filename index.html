@@ -69,8 +69,61 @@
     .page-hero {
       background: #fff;
       border-bottom: 1px solid #F0F0F0;
-      padding: 3.5rem 1.5rem 2.5rem;
+      padding: 2rem 1.5rem 1.5rem;
       text-align: center;
+    }
+
+    /* ── Inline trust strip — sits above the survey, inside the fold ── */
+    .trust-strip {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0;
+      margin: 1.25rem auto 0;
+      max-width: 680px;
+      background: #FFF5F5;
+      border: 1.5px dashed var(--scarlet);
+      border-radius: 12px;
+      padding: 0.75rem 1rem;
+    }
+    .trust-strip-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      flex: 1;
+      padding: 0 0.75rem;
+    }
+    .trust-strip-item:not(:last-child) {
+      border-right: 1px solid rgba(183,28,28,0.2);
+    }
+    .trust-strip-num {
+      font-size: 1.5rem;
+      font-weight: 800;
+      color: var(--scarlet);
+      line-height: 1;
+    }
+    .trust-strip-label {
+      font-size: 0.72rem;
+      color: #4A5568;
+      margin-top: 0.2rem;
+      text-align: center;
+      line-height: 1.3;
+    }
+
+    @media (max-width: 640px) {
+      .trust-strip {
+        gap: 0;
+        padding: 0.6rem 0.5rem;
+      }
+      .trust-strip-item {
+        padding: 0 0.4rem;
+      }
+      .trust-strip-num {
+        font-size: 1.1rem;
+      }
+      .trust-strip-label {
+        font-size: 0.65rem;
+      }
     }
 
     /* ── Audience callout — small, icon-prefixed qualifier ── */
@@ -117,10 +170,10 @@
     /* ── Mobile: scale headlines down to ~28px (matches YMP mobile) ── */
     @media (max-width: 640px) {
       .page-hero {
-        padding: 2.5rem 1rem 2rem;
+        padding: 1.5rem 1rem 1rem;
       }
       .headline-main {
-        font-size: 1.75rem; /* ~28px */
+        font-size: 1.75rem;
         letter-spacing: -0.01em;
       }
       .sub-headline {
@@ -165,11 +218,7 @@
       vertical-align: middle;
     }
 
-    .section-stats {
-      background: #fff;
-      border-top: 1px solid #F0F0F0;
-      padding: 3rem 1.5rem;
-    }
+    /* section-stats removed — stats moved into hero trust-strip */
   </style>
 </head>
 <body>
@@ -201,17 +250,33 @@
     <p class="sub-headline">
       Powered By Our Rose Scaling Protocol (Proven Across $2M+ In Ad Spend)
     </p>
+
+    <!-- ── Inline Trust Strip (above the fold) ── -->
+    <div class="trust-strip">
+      <div class="trust-strip-item">
+        <span class="trust-strip-num">$2M+</span>
+        <span class="trust-strip-label">Spent on paid ads<br/>for clients</span>
+      </div>
+      <div class="trust-strip-item">
+        <span class="trust-strip-num">86%</span>
+        <span class="trust-strip-label">of Clients Increased<br/>Revenue in 30 Days</span>
+      </div>
+      <div class="trust-strip-item">
+        <span class="trust-strip-num">250+</span>
+        <span class="trust-strip-label">Businesses<br/>Scaled</span>
+      </div>
+    </div>
   </div>
 </div>
 
 <!-- ─────────────────────────────────────────
      SURVEY SECTION
 ───────────────────────────────────────── -->
-<section style="padding: 3rem 1.5rem; background:#FAFAFA;" class="fade-in-up delay-1">
+<section style="padding: 1.25rem 1.5rem 2rem; background:#FAFAFA;" class="fade-in-up delay-1">
   <div class="container--narrow">
     <div class="survey-wrapper">
       <div class="survey-header">
-        As of today, only 3 audit spots remain. Apply below
+        Apply below
         <span class="spots-badge">1 min</span>
       </div>
 
@@ -228,27 +293,7 @@
   </div>
 </section>
 
-<!-- ─────────────────────────────────────────
-     STATS SECTION
-───────────────────────────────────────── -->
-<section class="section-stats fade-in-up delay-2">
-  <div class="container--narrow">
-    <div class="stats-grid">
-      <div class="stat-box">
-        <span class="stat-number">$2M+</span>
-        <p class="stat-label">Spent on paid ads for clients</p>
-      </div>
-      <div class="stat-box">
-        <span class="stat-number">86%</span>
-        <p class="stat-label">of Clients Increased Revenue in 30 Days</p>
-      </div>
-      <div class="stat-box">
-        <span class="stat-number">250+</span>
-        <p class="stat-label">Businesses Scaled</p>
-      </div>
-    </div>
-  </div>
-</section>
+<!-- Stats section removed — trust data now lives in hero trust-strip above the fold -->
 
 <!-- ─────────────────────────────────────────
      FOOTER
