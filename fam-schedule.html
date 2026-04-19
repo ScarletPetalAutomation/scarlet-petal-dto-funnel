@@ -33,14 +33,11 @@
       src="https://www.facebook.com/tr?id=4129749820595867&ev=Schedule&noscript=1"/>
   </noscript>
 
-  <link rel="stylesheet" href="shared.css?v=2" />
+  <link rel="stylesheet" href="shared.css?v=4" />
   <style>
-    body { background: #FAFAFA; }
-
+    /* ── Schedule page dark overrides ── */
     .schedule-hero {
-      background: #fff;
-      border-bottom: 1px solid #F0F0F0;
-      padding: 3.5rem 1.5rem 2.5rem;
+      padding: 2rem 1.5rem 1.5rem;
       text-align: center;
       position: relative;
     }
@@ -48,77 +45,64 @@
     .geo-svg {
       position: absolute;
       top: 0;
-      opacity: 0.06;
+      opacity: 0.08;
       pointer-events: none;
     }
-
-    .geo-svg.left  { left: 0;  }
+    .geo-svg.left  { left: 0; }
     .geo-svg.right { right: 0; transform: scaleX(-1); }
 
     .headline-top {
-      font-size: 1.1rem;
-      color: var(--text-secondary);
+      font-size: 1rem;
+      color: var(--sp-muted);
       font-weight: 500;
       margin-bottom: 0.4rem;
     }
 
     .headline-accent-block {
-      font-size: clamp(1.8rem, 4vw, 2.75rem);
-      color: var(--scarlet);
-      line-height: 1.15;
+      font-size: clamp(1.6rem, 4vw, 2.5rem);
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      line-height: 1.1;
+      background: linear-gradient(135deg, #F8FAFC 0%, #ff7a7a 80%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
     }
 
     .sub-copy {
       font-size: 1rem;
-      color: var(--text-secondary);
+      color: var(--sp-muted);
       max-width: 540px;
-      margin: 0.85rem auto 0;
+      margin: 0.75rem auto 0;
     }
 
     .dot-divider-row {
       display: flex;
       justify-content: center;
       gap: 6px;
-      margin: 1.5rem 0;
+      margin: 1rem 0;
     }
-
     .dot-divider-row span {
-      width: 8px;
-      height: 8px;
+      width: 7px;
+      height: 7px;
       border-radius: 50%;
-      background: var(--scarlet);
+      background: var(--sp-red);
       display: block;
     }
 
     .schedule-meta {
       display: inline-flex;
       align-items: center;
-      gap: 1.5rem;
+      gap: 1.25rem;
       flex-wrap: wrap;
       justify-content: center;
-      margin-bottom: 1.75rem;
+      margin-bottom: 1.25rem;
     }
-
     .schedule-meta-label {
-      font-family: var(--font-heading);
-      font-size: 1.1rem;
+      font-size: 1rem;
       font-weight: 700;
-      color: var(--text-primary);
+      color: var(--sp-white);
     }
-
-    .warning-box {
-      background: #FFF8F5;
-      border: 1.5px solid rgba(192,57,43,0.25);
-      border-radius: var(--radius-md);
-      padding: 1.1rem 1.5rem;
-      font-size: 0.88rem;
-      color: var(--text-secondary);
-      text-align: center;
-      max-width: 600px;
-      margin: 1.5rem auto 0;
-    }
-
-    .warning-box strong { color: var(--scarlet); }
   </style>
 </head>
 <body>
@@ -148,10 +132,9 @@
 <!-- ─────────────────────────────────────────
      HEADER / NAV
 ───────────────────────────────────────── -->
-<header style="background:#fff; border-bottom:1px solid #F0F0F0; padding:1rem 1.5rem; text-align:center;">
-  <a href="index.html" class="brand-logo" style="justify-content:center;">
-    <div class="brand-icon">🌹</div>
-    <span>SCARLET PETAL AUTOMATION</span>
+<header style="background:rgba(8,12,22,0.9); backdrop-filter:blur(16px); -webkit-backdrop-filter:blur(16px); border-bottom:1px solid rgba(30,41,59,0.6); padding:0.85rem 1.5rem; text-align:center;">
+  <a href="index.html" style="display:inline-block;">
+    <img src="spa-logo.png" alt="Scarlet Petal Automation" style="height:56px; width:auto; display:block; margin:0 auto;" />
   </a>
 </header>
 
@@ -183,7 +166,7 @@
 <!-- ─────────────────────────────────────────
      SCHEDULING SECTION
 ───────────────────────────────────────── -->
-<section style="padding:3rem 1.5rem; background:#FAFAFA;" class="fade-in-up delay-1">
+<section style="padding:1.5rem 1.5rem 2.5rem;" class="fade-in-up delay-1">
   <div class="container--narrow">
     <div style="text-align:center; margin-bottom:1.75rem;">
       <div class="schedule-meta">

@@ -33,7 +33,7 @@
       src="https://www.facebook.com/tr?id=4129749820595867&ev=Schedule&noscript=1"/>
   </noscript>
 
-  <link rel="stylesheet" href="shared.css?v=2" />
+  <link rel="stylesheet" href="shared.css?v=4" />
   <style>
     body { background: var(--bg-darkest); color: var(--text-white); }
 
@@ -120,28 +120,29 @@
 
     /* ── White info section ── */
     .info-section {
-      background: #fff;
+      background: rgba(8,12,22,0.95);
       padding: 4rem 1.5rem;
-      color: var(--text-primary);
     }
 
     .step-block {
-      background: #FAFAFA;
-      border: 1px solid #E5E7EB;
-      border-radius: var(--radius-lg);
+      background: rgba(15,23,42,0.75);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border: 1px solid rgba(30,41,59,0.8);
+      border-radius: var(--sp-r);
       padding: 2rem;
       margin-bottom: 1.5rem;
     }
 
     .step-block h3 {
       font-size: 1.2rem;
-      color: var(--text-primary);
+      color: var(--sp-white);
       margin-bottom: 0.6rem;
     }
 
     .step-block p {
       font-size: 0.95rem;
-      color: var(--text-secondary);
+      color: var(--sp-muted);
     }
 
     .confirmed-note {
@@ -183,7 +184,7 @@
     }
 
     .faq-section {
-      background: #fff;
+      background: rgba(8,12,22,0.97);
       padding: 4rem 1.5rem;
     }
 
@@ -239,7 +240,7 @@
 ───────────────────────────────────────── -->
 <section class="info-section fade-in-up delay-2">
   <div class="container--narrow">
-    <h2 style="text-align:center; font-size:1.75rem; margin-bottom:2rem; color:var(--text-primary);">
+    <h2 style="text-align:center; font-size:1.75rem; margin-bottom:2rem; color:var(--sp-white);">
       What Happens Next
     </h2>
 
@@ -275,7 +276,7 @@
 ───────────────────────────────────────── -->
 <section class="faq-section fade-in-up delay-3">
   <div class="container--narrow">
-    <h2 style="text-align:center; font-size:1.75rem; margin-bottom:0.5rem;">
+    <h2 style="text-align:center; font-size:1.75rem; margin-bottom:0.5rem; color:var(--sp-white);">
       Get Your Questions Answered Before The Call
     </h2>
     <div class="faq-divider"></div>

@@ -59,74 +59,16 @@
       src="https://www.facebook.com/tr?id=4129749820595867&ev=PageView&noscript=1"/>
   </noscript>
 
-  <link rel="stylesheet" href="shared.css?v=2" />
+  <link rel="stylesheet" href="shared.css?v=4" />
   <style>
-    /* ── Page-specific styles ── */
-    body {
-      background: #FAFAFA;
-    }
-
+    /* ── Page-specific dark overrides ── */
     .page-hero {
-      background: transparent;              /* inherits #F5F5F5 body canvas */
-      border-bottom: none;
-      padding: 0.75rem 1.5rem 1.25rem;
+      padding: 1rem 1.5rem 1.25rem;
       text-align: center;
+      position: relative;
     }
 
-    /* ── Inline trust strip — sits above the survey, inside the fold ── */
-    .trust-strip {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 0;
-      margin: 1.25rem auto 0;
-      max-width: 680px;
-      background: #FFF5F5;
-      border: 1.5px dashed var(--scarlet);
-      border-radius: 12px;
-      padding: 0.75rem 1rem;
-    }
-    .trust-strip-item {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      flex: 1;
-      padding: 0 0.75rem;
-    }
-    .trust-strip-item:not(:last-child) {
-      border-right: 1px solid rgba(183,28,28,0.2);
-    }
-    .trust-strip-num {
-      font-size: 1.5rem;
-      font-weight: 800;
-      color: var(--scarlet);
-      line-height: 1;
-    }
-    .trust-strip-label {
-      font-size: 0.72rem;
-      color: #4A5568;
-      margin-top: 0.2rem;
-      text-align: center;
-      line-height: 1.3;
-    }
-
-    @media (max-width: 640px) {
-      .trust-strip {
-        gap: 0;
-        padding: 0.6rem 0.5rem;
-      }
-      .trust-strip-item {
-        padding: 0 0.4rem;
-      }
-      .trust-strip-num {
-        font-size: 1.1rem;
-      }
-      .trust-strip-label {
-        font-size: 0.65rem;
-      }
-    }
-
-    /* ── Audience callout — small, icon-prefixed qualifier ── */
+    /* Audience callout */
     .headline-preheader {
       display: flex;
       align-items: center;
@@ -134,91 +76,59 @@
       gap: 0.4rem;
       font-size: 1rem;
       font-weight: 600;
-      color: #4A5568;
-      margin-bottom: 0.5rem;
-      line-height: 1.5;
+      color: var(--sp-muted);
+      margin-bottom: 0.75rem;
     }
     .headline-preheader::before {
       content: '\1F464';
       font-size: 1rem;
     }
 
-    /* ── Offer headline — 40px/800w matches YMP desktop ── */
+    /* Main offer headline — white-to-rose gradient */
     .headline-main {
-      font-size: 2.5rem; /* ~40px */
+      font-size: clamp(2rem, 4.5vw, 3.2rem);
       font-weight: 800;
-      color: #000000;
+      letter-spacing: -0.03em;
       line-height: 1.1;
-      letter-spacing: -0.02em;
-      margin-bottom: 0.2rem;
+      margin-bottom: 0.5rem;
+      background: linear-gradient(135deg, #F8FAFC 0%, #ff7a7a 80%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
     }
 
-    /* ── Method/proof line — same size as H1, scarlet replaces YMP teal ── */
+    /* Method subheadline — scarlet gradient */
     .sub-headline {
-      font-size: 2.5rem; /* ~40px — matches H1 visual weight */
-      font-weight: 800;
-      color: var(--scarlet);
-      max-width: 800px;
-      margin: 0 auto;
-      line-height: 1.1;
-    }
-    .sub-headline strong {
-      font-weight: 800;
-      color: var(--scarlet);
-    }
-
-    /* ── Mobile: scale headlines down to ~28px (matches YMP mobile) ── */
-    @media (max-width: 640px) {
-      .page-hero {
-        padding: 1.5rem 1rem 1rem;
-      }
-      .headline-main {
-        font-size: 1.75rem;
-        letter-spacing: -0.01em;
-      }
-      .sub-headline {
-        font-size: 1.75rem;
-      }
-      .headline-preheader {
-        font-size: 0.9rem;
-        flex-wrap: wrap;
-        text-align: center;
-      }
-    }
-
-    .survey-wrapper {
-      background: #fff;
-      border-radius: var(--radius-lg);
-      box-shadow: 0 6px 30px rgba(0,0,0,0.09);
-      padding: 0.5rem;
-      position: relative;
-      overflow: hidden;
-    }
-
-    .survey-header {
-      background: linear-gradient(135deg, var(--scarlet) 0%, #8B0000 100%);
-      color: #fff;
-      padding: 1.1rem 1.75rem;
-      border-radius: 18px 18px 0 0;
-      font-family: var(--font-heading);
+      font-size: clamp(1.3rem, 2.5vw, 1.8rem);
       font-weight: 700;
-      font-size: 1rem;
-      text-align: center;
+      letter-spacing: -0.02em;
+      line-height: 1.2;
+      background: linear-gradient(135deg, #ff7a7a 0%, var(--sp-red) 60%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      max-width: 760px;
+      margin: 0 auto;
     }
 
-    .spots-badge {
-      display: inline-block;
-      background: var(--gold);
-      color: #1A1A1A;
-      font-size: 0.75rem;
-      font-weight: 800;
-      padding: 0.2rem 0.65rem;
-      border-radius: var(--radius-pill);
-      margin-left: 0.5rem;
-      vertical-align: middle;
+    /* Social proof text colour on dark bg */
+    .social-proof-text { color: var(--sp-muted); }
+
+    /* Survey section */
+    .survey-section {
+      padding: 1.25rem 1.5rem 2rem;
     }
 
-    /* section-stats removed — stats moved into hero trust-strip */
+    @media (max-width: 640px) {
+      .page-hero { padding: 0.75rem 1rem 1rem; }
+      .headline-main { font-size: 1.9rem; }
+      .sub-headline  { font-size: 1.2rem; }
+      .headline-preheader { font-size: 0.9rem; flex-wrap: wrap; }
+      .trust-strip { padding: 0.65rem 0.5rem; }
+      .trust-strip-item { padding: 0 0.4rem; }
+      .trust-strip-num { font-size: 1.15rem; }
+      .trust-strip-label { font-size: 0.63rem; }
+    }
   </style>
 </head>
 <body>
